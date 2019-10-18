@@ -1,0 +1,55 @@
+body {
+	margin: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#root{
+	width: 95%;
+	height: 95%;
+	box-shadow: 3px 5px 5px 2px #272525;
+}
+
+.coins{
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	background: #bef5c4;
+}
+
+.notouch .table:hover{
+	overflow: auto;
+	margin-right: 0;
+}
+
+.table::-webkit-scrollbar {
+	background-color: #bef5c4;
+}
+.table::-webkit-scrollbar-thumb{
+background: #1d1b1b45;
+border-radius: 10px;
+}
+
+.mouse{
+	overflow: hidden;
+	margin-right: 17px;
+	margin-left: 17px;
+}
+.touch{
+	overflow: auto;
+	margin-right: 15px;
+	margin-left: 17px;
+}
+
+	@media only screen and (min-height: 844px) {
+		.notouch .table:hover{
+			overflow: hidden;
+			margin-right: 17px;
+		}
+}

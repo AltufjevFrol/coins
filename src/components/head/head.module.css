@@ -1,0 +1,47 @@
+.head tr{
+	border-bottom: 2px solid black;
+}
+
+.head{
+	flex-basis: 50px;
+	margin-right: 17px;
+	margin-left: 17px;
+}
+
+.name{
+	width: 40%;
+	text-align: start;
+}
+
+.prise{
+	width: 20%
+}
+
+.market{
+	width: 20%
+}
+
+.volume{
+	width: 20%
+}
+
+th{
+	text-align: end;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+@media only screen and (max-width : 645px){
+
+	.market, .volume{
+		display: none;
+	}
+
+	.name{
+		width: 60%;
+	}
+	.prise{
+		width: 40%
+	}
+
+}
